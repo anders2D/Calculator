@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tabla"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:stretchColumns="*"
+
+        >
+        <TextView
+            android:textColor="#000000"
+            android:background="#ffaa33"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora"
+            />
+
+        <TextView
+            android:id="@+id/TextoEmpezar"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_gravity="left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+        <TableRow>
+
+            <TextView
+                android:layout_span="3"
+                android:id="@+id/text_restultado"
+                android:background="#ffaa33"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Resultado"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/boton_igual"
+
+                android:layout_span="1"
+                android:text="="
+                android:textSize="24sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/num_1"
+                android:text="1"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/num_2"
+                android:text="2"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/num_3"
+                android:text="3"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/suma"
+                android:text="+"
+                android:textSize="24sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+        <Button
+            android:id="@+id/num_4"
+            android:text="4"
+            android:textSize="24sp"
+
+            />
+
+        <Button
+            android:id="@+id/num_5"
+            android:text="5"
+            android:textSize="24sp"
+
+            />
+
+        <Button
+            android:id="@+id/num_6"
+            android:text="6"
+            android:textSize="24sp"
+
+            />
+
+        <Button
+            android:id="@+id/resta"
+            android:text="-"
+            android:textSize="24sp"
+
+            />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <Button
+                android:id="@+id/num_7"
+                android:text="7"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/num_8"
+                android:text="8"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/num_9"
+                android:text="9"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/multiplicar"
+                android:text="*"
+                android:textSize="24sp"
+
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <Button
+                android:id="@+id/num_0"
+                android:text="0"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/punto"
+                android:text="."
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/borrar"
+                android:text="C"
+                android:textSize="24sp"
+
+                />
+
+            <Button
+                android:id="@+id/dividir"
+                android:text="/"
+                android:textSize="24sp"
+
+                />
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
